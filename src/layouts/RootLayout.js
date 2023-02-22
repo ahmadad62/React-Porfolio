@@ -1,53 +1,33 @@
 import { NavLink, Outlet } from "react-router-dom";
 import Breadcrumbs from "../components/Breadcrumbs";
-import "./navbar.scss";
-import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
+import "./RootLayout.scss";
 import LanguageOutlinedIcon from "@mui/icons-material/LanguageOutlined";
 import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
 import FullscreenExitOutlinedIcon from "@mui/icons-material/FullscreenExitOutlined";
-import NotificationsNoneOutlinedIcon from "@mui/icons-material/NotificationsNoneOutlined";
-import ChatBubbleOutlineOutlinedIcon from "@mui/icons-material/ChatBubbleOutlineOutlined";
-import ListOutlinedIcon from "@mui/icons-material/ListOutlined";
-// import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
-import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
-import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
 import { useState } from "react";
 
 
-// import { useContext } from "react";
-// import { DarkModeContext } from "../../context/darkModeContext";
+import { useContext } from "react";
+import { DarkModeContext } from "../context/darkModeContext";
 
 
 
 
 const RootLayout = () => {
+    const { dispatch } = useContext(DarkModeContext)
     const [anchorElNav, setAnchorElNav] = useState(null);
-    const [anchorElUser, setAnchorElUser] = useState(null);
-
     const handleOpenNavMenu = (event) => {
         setAnchorElNav(event.currentTarget);
     };
-    const handleOpenUserMenu = (event) => {
-        setAnchorElUser(event.currentTarget);
-    };
-
     const handleCloseNavMenu = () => {
         setAnchorElNav(null);
-    };
-
-    const handleCloseUserMenu = () => {
-        setAnchorElUser(null);
     };
     return (
         <div className='root-layout'>
@@ -60,8 +40,8 @@ const RootLayout = () => {
 
                             <NavLink to="/">Home</NavLink>
                             <NavLink to="about">About</NavLink>
-                            <NavLink to="help">Help</NavLink>
-                            <NavLink to="careers">Careers</NavLink>
+                            <NavLink to="careers">Portfolio</NavLink>
+                            <NavLink to="help">Contact</NavLink>
                         </Box>
                         <Box
                             variant="h6"
@@ -88,7 +68,8 @@ const RootLayout = () => {
                                     <div className="item">
                                         <DarkModeOutlinedIcon
                                             className="icon"
-                                        // onClick={() => dispatch({ type: "TOGGLE" })}
+
+                                            onClick={() => dispatch({ type: "TOGGLE" })}
                                         />
                                     </div>
                                     <div className="item">
@@ -97,7 +78,7 @@ const RootLayout = () => {
 
                                     <div className="item">
                                         <img
-                                            src="https://images.pexels.com/photos/941693/pexels-photo-941693.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                                            src="https://avatars.githubusercontent.com/u/93351358?v=4"
                                             alt=""
                                             className="avatar"
                                         />
@@ -170,7 +151,7 @@ const RootLayout = () => {
                                     <div className="item">
                                         <DarkModeOutlinedIcon
                                             className="icon"
-                                        // onClick={() => dispatch({ type: "TOGGLE" })}
+                                            onClick={() => dispatch({ type: "TOGGLE" })}
                                         />
                                     </div>
 

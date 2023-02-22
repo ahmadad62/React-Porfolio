@@ -42,5 +42,51 @@
       "salary": 30000,
       "location": "London, UK"
     }
-  ]
+  ],
+  
+    "portfolio": [
+      {
+              "title": "Project 1",
+              "live": "https://paytonpierce.dev", 
+              "source": "https://github.com/paytonjewell",
+              "image": "mock1",
+              "id":1
+      },
+      {
+              "title": "Project 2",
+              "live": "https://paytonpierce.dev",
+              "source": "https://github.com/paytonjewell",
+              "image": "mock2",
+              "id":2
+      },
+      {
+              "title": "Project 3",
+              "live": "https://paytonpierce.dev",
+              "source": "https://github.com/paytonjewell",
+              "image": "mock3",
+              "id":3
+      },
+      {
+              "title": "Project 4",
+              "live": "https://paytonpierce.dev",
+              "source": "https://github.com/paytonjewell",
+              "image":"mock4",
+              "id":5
+      },
+      {
+              "title": "Project 5",
+              "live": "https://paytonpierce.dev",
+              "source": "https://github.com/paytonjewell",
+              "image": "mock5",
+              "id":5
+      },
+      {
+              "title": "Project 5",
+              "live": "https://paytonpierce.dev",
+              "source": "https://github.com/paytonjewell",
+              "image": "mock5",
+              "id":6
+      }
+    ]
+  
 }

@@ -16,6 +16,10 @@ import NotFound from './pages/NotFound';
 import RootLayout from './layouts/RootLayout';
 import HelpLayout from './layouts/HelpLayout';
 import CareersLayout from './layouts/CareersLayout';
+import { useContext } from 'react';
+import { DarkModeContext } from './context/darkModeContext';
+import "./App.module.scss"
+import "./style/dark.scss"
 
 
 const router = createBrowserRouter(
@@ -45,8 +49,12 @@ const router = createBrowserRouter(
   ))
 
 function App() {
+  const { darkMode } = useContext(DarkModeContext);
+
   return (
-    < RouterProvider router={router} />
+    <div className={darkMode ? "" : "app dark"}>
+      < RouterProvider router={router} />
+    </div>
   );
 }
 
