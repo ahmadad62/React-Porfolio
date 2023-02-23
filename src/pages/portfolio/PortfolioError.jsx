@@ -1,6 +1,6 @@
 import { Link, useRouteError } from 'react-router-dom';
 
-const CareersError = () => {
+const PortfolioError = () => {
 
     const error=useRouteError()
 
@@ -13,4 +13,4 @@ const CareersError = () => {
     );
 }
 
-export default CareersError;
+export default PortfolioError;

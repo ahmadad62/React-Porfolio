@@ -28,7 +28,7 @@
         color:#f0ebeb ;
       
     }
-    .help-layout nav a{
+    .contact-layout nav a{
         padding: 10px;
         border: 2px solid white ;
         background-color: #111;
@@ -36,10 +36,10 @@
         border-radius: 4px;
         text-decoration: none;
       }
-      .help-layout nav a:hover{
+      .contact-layout nav a:hover{
         border-color: var(--primary);
       }
-      .help-layout nav a.active {
+      .contact-layout nav a.active {
         color: #111;
         border: 2px solid white ;
         background-color:white ;

@@ -1,6 +1,6 @@
-export default function Faq() {
+export default function Media() {
     return (
-      <div className="faq">
+      <div className="media">
         <h3>Frequently Asked Questions</h3>
   
         <div className="question">

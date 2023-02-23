@@ -40,8 +40,8 @@ const RootLayout = () => {
 
                             <NavLink to="/">Home</NavLink>
                             <NavLink to="about">About</NavLink>
-                            <NavLink to="careers">Portfolio</NavLink>
-                            <NavLink to="help">Contact</NavLink>
+                            <NavLink to="portfolio">Portfolio</NavLink>
+                            <NavLink to="contact">Contact</NavLink>
                         </Box>
                         <Box
                             variant="h6"
@@ -120,7 +120,7 @@ const RootLayout = () => {
                                     <NavLink to="/">Home</NavLink>
                                     <NavLink to="about">About</NavLink>
                                     <NavLink to="help">Help</NavLink>
-                                    <NavLink to="careers">Careers</NavLink>
+                                    <NavLink to="portfolio">Portfolio</NavLink>
                                 </div>
                             </Menu>
                         </Box>

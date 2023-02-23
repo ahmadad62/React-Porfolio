@@ -13,7 +13,7 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import './Portfolio.scss'
 
-function Careers() {
+function Portfolio() {
     const portfolio = useLoaderData()
 
     return (
@@ -60,13 +60,13 @@ function Careers() {
     );
 }
 
-export default Careers;
+export default Portfolio;
 
 //loader function
 
 
 
-export const careersLoader = async () => {
+export const portfolioLoader = async () => {
     const res = await fetch('http://localhost:8000/portfolio')
 
     if (!res.ok) {

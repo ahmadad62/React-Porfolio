@@ -1,11 +1,12 @@
 import { Form, redirect, useActionData } from "react-router-dom";
-
-export default function Contact() {
+import './Contact.scss'
+export default function ContactInfo() {
   const data=useActionData()
   return (
-    <div className="contact">
+
+    <div className="contact-info">
       <h3>Contact Us</h3>
-      <Form method='post' action="/help/contact">
+      <Form method='post' action="/contact/contactInfo">
         <label>
           <span>Your email:</span>
           <input type="email" name="email" required />
@@ -18,6 +19,7 @@ export default function Contact() {
         <button>Submit</button>
       </Form>
     </div>
+
   )
 }
 

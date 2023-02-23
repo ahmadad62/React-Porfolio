@@ -6,16 +6,16 @@ import {
 } from 'react-router-dom'
 import About from './pages/About';
 import Home from './pages/Home';
-import CareerDetails, { careerDetailsLoader } from './pages/careers/CareerDetails';
-import CareersError from './pages/careers/CareersError';
-import Careers, { careersLoader } from './pages/careers/Careers';
-import Faq from './pages/help/Faq';
-import Contact, { contactAction } from './pages/help/Contact';
+import PortfolioDetails, { portfolioDetailsLoader } from './pages/portfolio/PortfolioDetails';
+import PortfolioError from './pages/portfolio/PortfolioError';
+import Portfolio, { portfolioLoader } from './pages/portfolio/Portfolio';
+import Media from './pages/contact/Media';
+import ContactInfo, { contactAction } from './pages/contact/ContactInfo';
 import NotFound from './pages/NotFound';
 
 import RootLayout from './layouts/RootLayout';
-import HelpLayout from './layouts/HelpLayout';
-import CareersLayout from './layouts/CareersLayout';
+import ContactLayout from './layouts/ContactLayout';
+import PortfolioLayout from './layouts/PortfolioLayout';
 import { useContext } from 'react';
 import { DarkModeContext } from './context/darkModeContext';
 import "./App.module.scss"
@@ -27,21 +27,21 @@ const router = createBrowserRouter(
     <Route path='/' element={<RootLayout />}>
       <Route index element={<Home />} />
       <Route path='about' element={<About />} />
-      <Route path='help' element={<HelpLayout />}>
-        <Route path='faq' element={<Faq />} />
-        <Route path='contact' element={<Contact />} action={contactAction} />
+      <Route path='contact' element={<ContactLayout />}>
+        <Route path='media' element={<Media />} />
+        <Route path='contactInfo' element={<ContactInfo />} action={contactAction} />
       </Route>
-      <Route path="careers" element={<CareersLayout />} errorElement={<CareersError />}>
+      <Route path="portfolio" element={<PortfolioLayout />} errorElement={<PortfolioError />}>
         <Route
           index
-          element={<Careers />}
-          loader={careersLoader}
-          errorElement={<CareersError />}
+          element={<Portfolio />}
+          loader={portfolioLoader}
+          errorElement={<PortfolioError />}
         />
         <Route
           path=':id'
-          element={<CareerDetails />}
-          loader={careerDetailsLoader}
+          element={<PortfolioDetails />}
+          loader={portfolioDetailsLoader}
         />
       </Route>
       <Route path='*' element={<NotFound />} />
