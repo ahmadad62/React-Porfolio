@@ -1,48 +1,58 @@
 .app.dark {
+  background-color: #111;
+  color: rgb(243, 239, 239);
+
+  .root-layout .nav {
+    // color: #999;
+    border: 1px solid #333;
     background-color: #111;
-     color: rgb(243, 239, 239);
-   
-    .root-layout .nav {
-      // color: #999;
-      border:1px solid #333;
-      background-color: #111;
-    }
-   main{
+  }
+  main {
     height: auto;
     background-color: #111;
-    
-   }
-
-    input{
-        background-color: transparent;
-        border: 1px solid white;
-        color: white;
-    }
-
-    textarea{
-        background-color: transparent;
-        border: 1px solid white;
-        color: white;
-    }
-    button{
-        color:#f0ebeb ;
-      
-    }
-    .contact-layout nav a{
-        padding: 10px;
-        border: 2px solid white ;
-        background-color: #111;
-        color: white ;
-        border-radius: 4px;
-        text-decoration: none;
-      }
-      .contact-layout nav a:hover{
-        border-color: var(--primary);
-      }
-      .contact-layout nav a.active {
-        color: #111;
-        border: 2px solid white ;
-        background-color:white ;
-
-      }
   }
+
+  input {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    height: 3rem;
+    &:focus {
+      border: none;
+    }
+  }
+
+  textarea{
+    background-color: gray;
+    border: 1px solid white;
+    color: white;
+    height: 11rem;
+    &:focus {
+      border: none;
+    }
+   
+    }
+  label {
+    color: #f0ebeb;
+  }
+
+  button {
+    color: #f0ebeb;
+  }
+  .contact-layout nav a {
+    padding: 10px;
+    border: 2px solid white;
+    background-color: #111;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+  }
+  .contact-layout nav a:hover {
+    border-color: var(--primary);
+  }
+  .contact-layout nav a.active {
+    color: #111;
+    border: 2px solid white;
+    background-color: white;
+  }
+}
