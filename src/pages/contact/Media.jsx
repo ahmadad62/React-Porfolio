@@ -1,33 +1,34 @@
+import { Box } from "@mui/material";
+import SocialIcon from "../SocialIcon";
+import './Media.scss'
+import { info } from "../../info/info";
+
 export default function Media() {
+    console.log(info)
     return (
-      <div className="media">
-        <h3>Frequently Asked Questions</h3>
-  
-        <div className="question">
-          <p><strong>Lorem ipsum dolor sit amet.</strong></p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, recusandae doloribus qui molestias similique asperiores incidunt. Obcaecati tenetur consectetur dolorem eius ex, ad, laudantium inventore quia odio minus eligendi ipsa?</p>
+        <div id="media">
+        <Box
+            
+            display={'flex'}
+            gap={'1.5rem'}
+            justifyContent={'center'}
+            fontSize={{
+                xs: '2rem',
+                md: '2.5rem',
+                color: 'black'
+            }}
+            marginTop={'4rem'}
+        >
+
+            {info.socials.map((social, index) => (
+                <SocialIcon
+                    key={index}
+                    link={social.link}
+                    icon={social.icon}
+                    label={social.label}
+                />
+            ))}
+        </Box>
         </div>
-  
-        <div className="question">
-          <p><strong>Lorem ipsum dolor sit amet.</strong></p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, recusandae doloribus qui molestias similique asperiores incidunt. Obcaecati tenetur consectetur dolorem eius ex, ad, laudantium inventore quia odio minus eligendi ipsa?</p>
-        </div>
-  
-        <div className="question">
-          <p><strong>Lorem ipsum dolor sit amet.</strong></p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, recusandae doloribus qui molestias similique asperiores incidunt. Obcaecati tenetur consectetur dolorem eius ex, ad, laudantium inventore quia odio minus eligendi ipsa?</p>
-        </div>
-  
-        <div className="question">
-          <p><strong>Lorem ipsum dolor sit amet.</strong></p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, recusandae doloribus qui molestias similique asperiores incidunt. Obcaecati tenetur consectetur dolorem eius ex, ad, laudantium inventore quia odio minus eligendi ipsa?</p>
-        </div>
-  
-        <div className="question">
-          <p><strong>Lorem ipsum dolor sit amet.</strong></p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, recusandae doloribus qui molestias similique asperiores incidunt. Obcaecati tenetur consectetur dolorem eius ex, ad, laudantium inventore quia odio minus eligendi ipsa?</p>
-        </div>
-  
-      </div>
     )
-  }
+}

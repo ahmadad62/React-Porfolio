@@ -49,33 +49,18 @@ export const info = {
         }
     ],
     socials: [
+
         {
-            link: "https://facebook.com",
-            icon: 'fa fa-facebook',
-            label: 'facebook'
-        },
-        {
-            link: "https://instagram.com",
-            icon: 'fa fa-instagram',
-            label: 'instagram'
-        },
-        {
-            link: "https://github.com",
+            link: "https://github.com/ahmadad62",
             icon: "fa fa-github",
             label: 'github'
         },
         {
-            link: "https://linkedin.com",
+            link: "https://www.linkedin.com/in/ahmad-alinaghian-17a773183?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BuJ03eX2DToS2p8%2FBKC5q7w%3D%3D",
             icon: "fa fa-linkedin",
             label: 'linkedin'
         },
-        {
-            link: "https://twitter.com",
-            icon: "fa fa-twitter",
-            label: 'twitter'
-        }
-        // Feel free to remove any of these that you don't have. I'll write an FAQ on how to add new ones later, let me know if you have a request for an icon!
-        // Just change the links so that they lead to your social profiles.
+
 
     ],
     bio: {

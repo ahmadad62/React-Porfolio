@@ -2,7 +2,6 @@ import { Button, FormControl, TextField } from "@mui/material";
 import { Form, redirect, useActionData } from "react-router-dom";
 import './Contact.scss'
 export default function ContactInfo() {
-  const data=useActionData()
   return (
 
     <div className="contact-info">

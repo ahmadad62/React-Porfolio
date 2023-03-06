@@ -1,6 +1,5 @@
 import React from 'react';
 import Style from './Home.module.scss';
-import SocialIcon from "./SocialIcon";
 import { Box } from "@mui/material";
 import { info } from "../info/info";
 
@@ -51,23 +50,6 @@ const Home = () => {
                                 </Box>
                                 {bio.text}
                             </Box>
-                        ))}
-                    </Box>
-                    <Box
-                        display={'flex'}
-                        gap={'1.5rem'}
-                        justifyContent={'center'}
-                        fontSize={{
-                            xs: '2rem',
-                            md: '2.5rem'
-                        }}>
-                        {info.socials.map((social, index) => (
-                            <SocialIcon
-                                key={index}
-                                link={social.link}
-                                icon={social.icon}
-                                label={social.label}
-                            />
                         ))}
                     </Box>
                 </Box>
