@@ -1,10 +1,10 @@
 
 
 .contact-layout{
-  height: 100%;
+
   margin:auto ;
   padding: 3rem;
-
+ 
 nav {
   display: flex;
   justify-content: center;
@@ -27,6 +27,7 @@ nav {
     
   }
 }
+main{
 
 /* media */
 
@@ -61,4 +62,4 @@ form textarea {
 form label span {
    margin-bottom: 10px;
 }
-}
+}}

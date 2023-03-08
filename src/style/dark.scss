@@ -48,11 +48,12 @@
     text-decoration: none;
   }
   .contact-layout nav a:hover {
-    border-color: var(--primary);
+    border-color: white;
   }
   .contact-layout nav a.active {
     color: #111;
     border: 2px solid white;
     background-color: white;
   }
+  
 }

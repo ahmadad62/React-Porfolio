@@ -7,6 +7,7 @@
     justify-content: flex-end;
     max-width: 100vw;
     margin: 0 auto;
+    background-color: rgba(16, 15, 15, 0.955);
     a {
       text-decoration: none;
       padding: 6px;
@@ -20,7 +21,7 @@
         font-weight: 900;
       }
       &:hover {
-        //  color: red;
+        // color: red;
         font-weight: bolder;
       }
     }
@@ -54,9 +55,38 @@
         }
       }
     }
+   
   }
-  main{
-    width: inherit;
-    height: inherit;
+  .root-main{
+
+// background:bottom right no-repeat url(../img/get-in-touch.png);
+
+
+  }
+}
+.nav-dropdown{
+ display: flex;
+ flex-direction: column;
+ width: 150px;
+ height: 150px;
+ justify-content: center;
+ align-items: center;
+//  padding: 10px;
+ font-weight: bold !important;
+ line-height: 1.5rem;
+ a{
+  text-decoration: none !important;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: gray;
+ }
+ a.active{
+  color: black;
+ }
+}
+
+@media only screen and ( max-width: 640px ) {
+  .root-main { 
+    background-image: none !important;
   }
 }

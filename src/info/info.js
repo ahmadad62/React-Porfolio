@@ -1,7 +1,7 @@
 import self from "../img/self.png"
-import mock1 from "../img/mock1.png"
-import mock2 from "../img/mock2.png"
-import mock3 from "../img/mock3.png"
+import mock1 from "../img/mock1.gif"
+import mock2 from "../img/AITS.png"
+import mock3 from "../img/netflix.jpg"
 import mock4 from "../img/mock4.png"
 import mock5 from "../img/mock5.png"
 
@@ -45,7 +45,7 @@ export const info = {
         },
         {
             emoji: "📧",
-            text: "Ahmad Alinaghian"
+            text: "ahmadalinaghian@yhaoo.com"
         }
     ],
     socials: [
@@ -96,30 +96,36 @@ export const info = {
     ],
     portfolio: [ // This is where your portfolio projects will be detailed
         {
-            title: "Project 1",
-            live: "https://paytonpierce.dev", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
-            source: "https://github.com/paytonjewell", // this should be a link to the **repository** of the project, where the code is hosted.
-            image: mock1
+            id: 1,
+            title: "Admin Dashboard and Firebase Authentication",
+            live: "https://resplendent-liger-fde8c2.netlify.app/",
+            source: "https://github.com/ahmadad62/ReactAdminDashboard",
+            image: mock1,
+            details: `https://github.com/ahmadad62/ReactAdminDashboard/blob/main/README.md`
         },
         {
-            title: "Project 2",
-            live: "https://paytonpierce.dev",
-            source: "https://github.com/paytonjewell",
+            id: 2,
+            title: "AITS-React Static Website",
+            live: "https://main--loquacious-llama-aa9e1d.netlify.app/",
+            source: "https://github.com/ahmadad62/React-Bootstrap-Website",
             image: mock2
         },
         {
-            title: "Project 3",
-            live: "https://paytonpierce.dev",
-            source: "https://github.com/paytonjewell",
+            id: 3,
+            title: "Netflix-Clone",
+            live: "https://chic-youtiao-b033b6.netlify.app/",
+            source: "https://github.com/ahmadad62/clone-netflix",
             image: mock3
         },
         {
-            title: "Project 4",
-            live: "https://paytonpierce.dev",
-            source: "https://github.com/paytonjewell",
+            id: 4,
+            title: "JAVASCRIPT CALCULATOR",
+            live: "https://github.com/ahmadad62/SimpleCalculator",
+            source: "https://github.com/ahmadad62/SimpleCalculator",
             image: mock4
         },
         {
+            id: 5,
             title: "Project 5",
             live: "https://paytonpierce.dev",
             source: "https://github.com/paytonjewell",

@@ -45,7 +45,7 @@ const RootLayout = () => {
                         </Box>
                         <Box
                             variant="h6"
-                            noWrap
+                            // noWrap
                             component="div"
                             href="/"
                             sx={{
@@ -116,7 +116,7 @@ const RootLayout = () => {
                                     display: { xs: 'block', md: 'none' },
                                 }}
                             >
-                                <div style={{ display: "flex", flexDirection: "column", background: "red" }} className="nav-dropdown">
+                                <div className="nav-dropdown">
                                     <NavLink to="/">Home</NavLink>
                                     <NavLink to="about">About</NavLink>
                                     <NavLink to="help">Help</NavLink>
@@ -155,13 +155,6 @@ const RootLayout = () => {
                                         />
                                     </div>
 
-                                    {/* <div className="item">
-                                                <img
-                                                    src="https://images.pexels.com/photos/941693/pexels-photo-941693.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-                                                    alt=""
-                                                    className="avatar"
-                                                />
-                                            </div> */}
                                 </div>
                             </div>
 
@@ -179,7 +172,7 @@ const RootLayout = () => {
 
             <Breadcrumbs />
 
-            <main>
+            <main className="root-main">
                 <Outlet />
             </main>
         </div>
