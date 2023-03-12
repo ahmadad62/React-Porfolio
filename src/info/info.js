@@ -100,14 +100,15 @@ export const info = {
             title: "Admin Dashboard and Firebase Authentication",
             live: "https://resplendent-liger-fde8c2.netlify.app/",
             source: "https://github.com/ahmadad62/ReactAdminDashboard",
-            image: mock1,
-            details: `https://github.com/ahmadad62/ReactAdminDashboard/blob/main/README.md`
+            repo: `ReactAdminDashboard`,
+            image: mock1
         },
         {
             id: 2,
             title: "AITS-React Static Website",
             live: "https://main--loquacious-llama-aa9e1d.netlify.app/",
             source: "https://github.com/ahmadad62/React-Bootstrap-Website",
+            repo: 'React-Bootstrap-Website',
             image: mock2
         },
         {
@@ -115,6 +116,7 @@ export const info = {
             title: "Netflix-Clone",
             live: "https://chic-youtiao-b033b6.netlify.app/",
             source: "https://github.com/ahmadad62/clone-netflix",
+            repo: 'clone-netflix',
             image: mock3
         },
         {
@@ -122,6 +124,7 @@ export const info = {
             title: "JAVASCRIPT CALCULATOR",
             live: "https://github.com/ahmadad62/SimpleCalculator",
             source: "https://github.com/ahmadad62/SimpleCalculator",
+            repo: 'SimpleCalculator',
             image: mock4
         },
         {
@@ -129,6 +132,7 @@ export const info = {
             title: "Project 5",
             live: "https://paytonpierce.dev",
             source: "https://github.com/paytonjewell",
+            repo: 'React-Bootstrap-Website',
             image: mock5
         }
     ]

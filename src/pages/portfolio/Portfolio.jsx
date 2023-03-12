@@ -26,7 +26,7 @@ function Portfolio() {
             >
                 {portfolio?.map(portfolio => (
                     <>
-                        <Card sx={{ maxWidth: 345 }} key={portfolio.id}>
+                        <Card sx={{ maxWidth: 345 ,minWidth:345 }} key={portfolio.id}>
                             <CardMedia
                                 sx={{ height: 140 }}
                                 image={portfolio.image}
@@ -66,13 +66,7 @@ export default Portfolio;
 
 
  export const portfolioLoader = async () => {
-//     const res = await fetch('http://localhost:8000/portfolio')
 
-//     if (!res.ok) {
-//         throw Error('Could not fetch the portfolio!')
-//     }
-
-//     return res.json()
 const portfolio= info.portfolio
 
 return portfolio

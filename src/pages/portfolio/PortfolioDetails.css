@@ -1,0 +1,42 @@
+.portfolio-details {
+    background-color: #f8f8f8; /* change to desired background color */
+    margin: 7rem;
+  }
+  
+  .portfolio-details {
+    padding: 20px;
+    background-color: #fff; /* change to desired background color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* add a box shadow for some depth */
+    font-family: Arial, sans-serif; /* set a font family for consistent typography */
+    line-height: 1.5; /* increase line height for better readability */
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 0; /* remove default margins to reduce spacing */
+  }
+  
+  a {
+    color: #007bff; /* set link color to a standard blue */
+    text-decoration: none; /* remove default underline */
+    font-weight: bold; /* make links stand out with bold text */
+  }
+  
+  hr {
+    border: none; /* remove default border to reduce visual clutter */
+    border-top: 1px solid #ccc; /* add a thin line to separate content */
+    margin: 20px 0; /* add some vertical spacing */
+  }
+  
+  ul {
+    list-style: disc; /* change bullet points to discs */
+    margin-bottom: 20px; /* add some bottom margin for spacing */
+  }
+  
+  ul li {
+    margin-left: 20px; /* indent list items */
+  }
+  
+  p:last-child {
+    margin-bottom: 2rem; /* remove margin bottom from last paragraph to reduce spacing */
+  }
+  
